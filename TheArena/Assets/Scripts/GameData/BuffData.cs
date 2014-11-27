@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 public class BuffData : ScriptableObject 
@@ -16,11 +17,19 @@ public class BuffData : ScriptableObject
 
 	public StatusEffect[] statusEffects;
 
-	public void ApplyBuff(GameObject enemy)
+	public Sprite sprite;
+
+	public void ApplyBuff(Character character)
 	{
 		foreach (var effect in statusEffects)
 		{
-
+			effect.Apply(character);
 		}
+	}
+
+	[MenuItem("Assets/Create/Custom/Buff")]
+	public static void CreateAsset()
+	{
+		ScriptableObjectUtility.CreateAsset<BuffData>();
 	}
 }
