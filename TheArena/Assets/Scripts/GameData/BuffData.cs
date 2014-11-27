@@ -1,15 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BuffData : MonoBehaviour {
+public class BuffData : ScriptableObject 
+{
+	public enum BuffType
+	{
+		Buff, Debuff,
+	};
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public string buffName;
+
+	public int duration;
+
+	public BuffType buffType;
+
+	public StatusEffect[] statusEffects;
+
+	public void ApplyBuff(GameObject enemy)
+	{
+		foreach (var effect in statusEffects)
+		{
+
+		}
 	}
 }
