@@ -32,7 +32,7 @@ public class InputManager : MonoBehaviour
 
     //-------------------------------------------------
 
-    private void Awake()
+    void Awake()
     {
         KeyMapping = new Dictionary<InputActions, KeyCode>();
         MouseMapping = new Dictionary<InputActions, int>();
