@@ -42,7 +42,7 @@ public class IsometricCameraController : MonoBehaviour
 
     void FixedUpdate()
     {
-        UpdateCameraPosition();
+        updateCameraPosition();
     }
 
     //-------------------------------------------------
@@ -51,7 +51,7 @@ public class IsometricCameraController : MonoBehaviour
 
     public void SetCameraDefaultValues()
     {
-        cameraCurrentDistance = 15;
+        cameraCurrentDistance = 25;
         cameraDesiredDistance = cameraCurrentDistance;
         orthographicSize = 5;
         nearClipPlane = 0.3f;
@@ -62,7 +62,7 @@ public class IsometricCameraController : MonoBehaviour
         zCameraOffset = 8;
     }
 
-    private void UpdateCameraPosition()
+    private void updateCameraPosition()
     {
         // Always look at the player
         Camera.main.transform.LookAt(Player);
@@ -88,14 +88,13 @@ public class IsometricCameraController : MonoBehaviour
         cameraCurrentPosition = new Vector3(xPos, yPos, zPos);    
     }
 
-
     #endregion
 
     //-------------------------------------------------
 
     #region Gameplay Camera Functions
 
-    public void ShakeCamera()
+    public void CameraShakeFX()
     {
 
     }

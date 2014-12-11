@@ -11,7 +11,7 @@ public class PlayerNavigationController : MonoBehaviour
     public InputManager inputManager;
 
     public float speed = 10.0f;
-    public float maxVelocityChange = 10.0f;
+    public float maxVelocityChange = 1.5f;
 
     public float gravity = 10.0f;
 

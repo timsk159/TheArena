@@ -165,6 +165,38 @@ ModelImporter:
     4300058: ArenaCover
     4300060: DuneCard
     4300062: Skydome
+    6400000: ArenaCover
+    6400002: ArenaDunes
+    6400004: Base
+    6400006: BigHornSittingStatic
+    6400008: Cageinterior
+    6400010: CanyonCover
+    6400012: Chair
+    6400014: Chest_Uber
+    6400016: Chest_Uber_Lid
+    6400018: door
+    6400020: DuneCard
+    6400022: DuneRocks
+    6400024: DuneRocks1
+    6400026: DuneRocks2
+    6400028: DuneRocks3
+    6400030: DuneRocks4
+    6400032: Dunes_Canyon
+    6400034: GateHouse
+    6400036: GemCutterSitStatic
+    6400038: IronTrim
+    6400040: OuterWalls
+    6400042: Pillars
+    6400044: Podium
+    6400046: rug
+    6400048: sand
+    6400050: Skydome
+    6400052: SM_DesertArena_BlowingFlags
+    6400054: ThroneCoverMesh
+    6400056: WallBracing
+    6400058: Walls
+    6400060: WallWinch
+    6400062: WoodenStool01
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -187,7 +219,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
